@@ -103,7 +103,6 @@ export default function Home() {
 
   // --- NEW: Background Slider Logic ---
   const backgroundImages = [
-    "/hero_banner.jpg",
     "/p1.jpg",
     "/p2.jpg",
     "/p3.jpg"
@@ -122,7 +121,8 @@ export default function Home() {
       
       {/* 1. SIMPLE STATIC HERO (Visible on ALL devices for now as requested) */}
       <section className="block relative h-[90vh] min-h-[650px] w-full bg-transparent overflow-hidden flex flex-col justify-center py-8">
-        {/* Using desktop banner with NO BLUR and a BRIGHTER overlay to support text colors perfectly */}
+        
+        {/* Subtle decorative gradient to keep the clean look without images */}
         <div className="absolute inset-0 z-0 bg-[#F4F7FB]">
           {backgroundImages.map((src, idx) => (
             <motion.img
