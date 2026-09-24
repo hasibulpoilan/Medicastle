@@ -101,14 +101,40 @@ export default function Home() {
 
   // Hooks removed for infinite auto-play carousel
 
+  // --- NEW: Background Slider Logic ---
+  const backgroundImages = [
+    "/hero_banner.jpg",
+    "/p1.jpg",
+    "/p2.jpg",
+    "/p3.jpg"
+  ];
+  const [currentBg, setCurrentBg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentBg((prev) => (prev + 1) % backgroundImages.length);
+    }, 4000); // Crossfade every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-[#F4F7FB]">
       
       {/* 1. SIMPLE STATIC HERO (Visible on ALL devices for now as requested) */}
       <section className="block relative h-[90vh] min-h-[650px] w-full bg-transparent overflow-hidden flex flex-col justify-center py-8">
         {/* Using desktop banner with NO BLUR and a BRIGHTER overlay to support text colors perfectly */}
-        <div className="absolute inset-0 z-0">
-          <img src="/hero_banner.jpg" alt="Medical Equipment" className="w-full h-full object-cover object-[70%_center]" />
+        <div className="absolute inset-0 z-0 bg-[#F4F7FB]">
+          {backgroundImages.map((src, idx) => (
+            <motion.img
+              key={src}
+              src={src}
+              alt="Medical Equipment"
+              className="absolute inset-0 w-full h-full object-cover object-[70%_center] mix-blend-multiply"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: currentBg === idx ? 1 : 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+            />
+          ))}
           <div className="absolute inset-0 bg-gradient-to-b from-[#F4F7FB]/50 via-[#F4F7FB]/90 to-[#F4F7FB]"></div>
         </div>
         
@@ -285,8 +311,9 @@ export default function Home() {
           {/* Right Side: Image/Graphics */}
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
             <div className="relative aspect-square md:aspect-[4/3] rounded-[3rem] overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/5">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[hsl(var(--medicastle-blue))]/20 to-transparent mix-blend-multiply z-10"></div>
-              <img src="/hero_banner.jpg" alt="Medical Team" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" />
+              {/* Very subtle standard darkening overlay (not tinting) just for contrast, no blend mode needed */}
+              <div className="absolute inset-0 bg-black/5 z-10"></div>
+              <img src="/services_banner.jpg" alt="Premium Medical Setup" className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" />
             </div>
           </div>
         </div>
