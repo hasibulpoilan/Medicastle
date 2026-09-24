@@ -104,50 +104,50 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#F4F7FB]">
       
-      {/* 1. MOBILE STATIC HERO (Matches Screenshot Layout, Visible ONLY on Mobile) */}
-      <section className="block md:hidden relative h-[90vh] min-h-[650px] w-full bg-transparent overflow-hidden flex flex-col justify-center py-8">
+      {/* 1. SIMPLE STATIC HERO (Visible on ALL devices for now as requested) */}
+      <section className="block relative h-[90vh] min-h-[650px] w-full bg-transparent overflow-hidden flex flex-col justify-center py-8">
         {/* Using desktop banner with NO BLUR and a BRIGHTER overlay to support text colors perfectly */}
         <div className="absolute inset-0 z-0">
           <img src="/hero_banner.jpg" alt="Medical Equipment" className="w-full h-full object-cover object-[70%_center]" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#F4F7FB]/50 via-[#F4F7FB]/90 to-[#F4F7FB]"></div>
         </div>
         
-        <div className="relative z-10 w-full px-4 flex flex-col items-center space-y-6">
+        <div className="relative z-10 w-full px-4 md:px-8 max-w-5xl mx-auto flex flex-col items-center space-y-6 md:space-y-8">
           {/* Pill Tag */}
-          <div className="inline-flex items-center gap-2 border border-[hsl(var(--medicastle-blue))]/20 bg-[hsl(var(--medicastle-blue))]/5 px-5 py-2.5 rounded-full w-[95%] max-w-sm justify-center shadow-[0_0_15px_rgba(255,255,255,1)]">
-            <span className="text-[hsl(var(--medicastle-blue))] text-xs font-bold tracking-wider uppercase">Authorized BPL Medical Dealer</span>
+          <div className="inline-flex items-center gap-2 border border-[hsl(var(--medicastle-blue))]/20 bg-[hsl(var(--medicastle-blue))]/5 px-5 md:px-6 py-2.5 md:py-3 rounded-full w-[95%] max-w-sm md:max-w-md justify-center shadow-[0_0_15px_rgba(255,255,255,1)]">
+            <span className="text-[hsl(var(--medicastle-blue))] text-xs md:text-sm font-bold tracking-wider uppercase">Authorized BPL Medical Dealer</span>
           </div>
           
           {/* Subheading */}
-          <h4 className="text-[hsl(var(--medicastle-red))] font-bold tracking-[0.15em] text-xs uppercase text-center drop-shadow-[0_0_10px_rgba(255,255,255,1)] pt-2">
+          <h4 className="text-[hsl(var(--medicastle-red))] font-bold tracking-[0.15em] text-xs md:text-sm uppercase text-center drop-shadow-[0_0_10px_rgba(255,255,255,1)] pt-2 md:pt-4">
             Medicastle · We Care
           </h4>
           
           {/* Main Heading */}
-          <h1 className={`${playfair.className} text-4xl sm:text-5xl font-black text-[hsl(var(--medicastle-blue))] text-center leading-[1.25] w-full px-2 drop-shadow-[0_2px_15px_rgba(255,255,255,1)]`}>
+          <h1 className={`${playfair.className} text-4xl sm:text-5xl md:text-7xl lg:text-[5rem] font-black text-[hsl(var(--medicastle-blue))] text-center leading-[1.25] md:leading-[1.1] w-full px-2 drop-shadow-[0_2px_15px_rgba(255,255,255,1)]`}>
             Premium Equipments. <br/>
             <span className="text-[hsl(var(--medicastle-red))] italic drop-shadow-[0_2px_15px_rgba(255,255,255,1)]">Enhancing Lives.</span>
           </h1>
           
           {/* Paragraph */}
-          <p className="text-[hsl(var(--medicastle-blue))]/90 text-base font-medium leading-relaxed text-center px-4 drop-shadow-[0_0_10px_rgba(255,255,255,1)] pt-2">
+          <p className="text-[hsl(var(--medicastle-blue))]/90 text-base md:text-xl font-medium leading-relaxed text-center px-4 max-w-3xl drop-shadow-[0_0_10px_rgba(255,255,255,1)] pt-2 md:pt-4">
             Say goodbye to compromised healthcare at home. Join our premium network of ICU setups and advanced respiratory care directly from authorized experts.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col gap-4 w-[95%] max-w-sm pt-8">
-            <Link href="/products" className="w-full bg-[hsl(var(--medicastle-blue))] hover:bg-blue-900 text-white text-center py-4 rounded-full font-bold text-base shadow-xl flex items-center justify-center gap-2 transition-all active:scale-95">
-              Explore Equipments <ArrowRight className="w-4 h-4" />
+          <div className="flex flex-col sm:flex-row gap-4 w-[95%] max-w-sm sm:max-w-xl pt-8 justify-center">
+            <Link href="/products" className="w-full sm:w-auto px-10 bg-[hsl(var(--medicastle-blue))] hover:bg-blue-900 text-white text-center py-4 rounded-full font-bold text-base md:text-lg shadow-xl flex items-center justify-center gap-2 transition-all hover:-translate-y-1 active:scale-95">
+              Explore Equipments <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link href="/contact" className="w-full bg-white text-[hsl(var(--medicastle-blue))] hover:bg-gray-50 border border-[hsl(var(--medicastle-blue))]/20 text-center py-4 rounded-full font-bold text-base shadow-md transition-all active:scale-95">
+            <Link href="/contact" className="w-full sm:w-auto px-10 bg-white text-[hsl(var(--medicastle-blue))] hover:bg-gray-50 border border-[hsl(var(--medicastle-blue))]/20 text-center py-4 rounded-full font-bold text-base md:text-lg shadow-md transition-all hover:-translate-y-1 active:scale-95">
               Contact Us
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 1. SCROLLYTELLING HERO SECTION (Apple Style) - Desktop Only */}
-      <section ref={heroRef} className="hidden md:block relative h-[350vh] bg-transparent">
+      {/* 2. SCROLLYTELLING HERO SECTION (Apple Style) - HIDDEN FOR NOW AS REQUESTED */}
+      <section ref={heroRef} className="hidden relative h-[350vh] bg-transparent">
         {/* Sticky Container - Stays fixed on screen while scrolling */}
         <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden">
           
