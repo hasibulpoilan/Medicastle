@@ -377,7 +377,7 @@ export default function Home() {
             {carouselProducts.map((product, index) => {
               
               // Determine card position relative to current active index
-              let position = "hidden";
+              let position: "center" | "left" | "right" | "hidden" = "hidden";
               if (index === currentIndex) position = "center";
               else if (index === (currentIndex - 1 + carouselProducts.length) % carouselProducts.length) position = "left";
               else if (index === (currentIndex + 1) % carouselProducts.length) position = "right";
