@@ -167,11 +167,14 @@ export default function ContactPage() {
                   <Building2 className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-black text-[hsl(var(--medicastle-blue))] mb-1">Head Office</h4>
-                  <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-sm leading-relaxed">
+                  <h4 className="font-black text-[hsl(var(--medicastle-blue))] mb-1">Head Office (Bally)</h4>
+                  <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-sm leading-relaxed mb-2">
                     17/3/E, Roy J.N. Bahadur Road,<br/>
                     Bally Howrah - 711201,<br/>
                     West Bengal.
+                  </p>
+                  <p className="text-[hsl(var(--medicastle-red))] font-bold text-sm">
+                    📞 +91 89618 57588
                   </p>
                 </div>
               </div>
@@ -181,11 +184,14 @@ export default function ContactPage() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-black text-[hsl(var(--medicastle-blue))] mb-1">Branch Office</h4>
-                  <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-sm leading-relaxed">
+                  <h4 className="font-black text-[hsl(var(--medicastle-blue))] mb-1">Branch Office (Uttarpara)</h4>
+                  <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-sm leading-relaxed mb-2">
                     51/1, Rajmohan Road,<br/>
                     Uttarpara, Hooghly - 712258,<br/>
                     West Bengal.
+                  </p>
+                  <p className="text-[hsl(var(--medicastle-red))] font-bold text-sm">
+                    📞 +91 89027 21080
                   </p>
                 </div>
               </div>

@@ -38,16 +38,13 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-gray-600">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[hsl(var(--medicastle-red))] shrink-0 mt-0.5" />
-                <p><strong>Head Office:</strong><br />17/3/E, Roy J.N. Bahadur Road,<br />Bally Howrah - 711201, WB.</p>
+                <p><strong>Head Office (Bally):</strong><br />17/3/E, Roy J.N. Bahadur Road,<br />Bally Howrah - 711201, WB.<br /><span className="text-[hsl(var(--medicastle-red))] font-bold">📞 +91 89618 57588</span></p>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[hsl(var(--medicastle-red))] shrink-0 mt-0.5" />
-                <p><strong>Branch:</strong><br />51/1, Rajmohan Road,<br />Uttarpara, Hooghly - 712258, West Bengal</p>
+                <p><strong>Branch (Uttarpara):</strong><br />51/1, Rajmohan Road,<br />Uttarpara, Hooghly - 712258, WB<br /><span className="text-[hsl(var(--medicastle-red))] font-bold">📞 +91 89027 21080</span></p>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[hsl(var(--medicastle-red))]" />
-                <p>+91 89618 57588 / 8902721080</p>
-              </div>
+
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[hsl(var(--medicastle-red))]" />
                 <p>medicastle6@gmail.com</p>

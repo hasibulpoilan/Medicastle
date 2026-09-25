@@ -3,7 +3,10 @@
 import { motion } from "framer-motion";
 import { Playfair_Display } from "next/font/google";
 import Link from "next/link";
-import { ShieldCheck, Award, HeartHandshake, ArrowRight, CheckCircle2 } from "lucide-react";
+import { 
+  ShieldCheck, Award, HeartHandshake, ArrowRight, 
+  CheckCircle2, Users, Globe, MapPin, Building2, TrendingUp 
+} from "lucide-react";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -42,10 +45,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-[hsl(var(--medicastle-blue))]/70 font-medium leading-relaxed">
               <p>
-                Founded over a decade and a half ago, Medi Castle has grown to become one of the most trusted names in the medical equipment supply industry. We understand that in healthcare, quality and reliability are never optional.
+                With an aim to provide state-of-the-art Medical equipment at most economical pricing with prompt service back-up, We, <strong>MEDI CASTLE</strong> are reckoned as a trustworthy Manufacturer, Wholesaler/Distributor, and Supplier in the field of medical and allied industries.
               </p>
               <p>
-                From premium wheelchairs and hospital beds to advanced home ICU setups and respiratory care devices, we bridge the gap between world-class medical technology and the patients who need them most.
+                Based on high-end healthcare with financial viability and customer comfort, we are engaged in offering world-class Surgical Instruments, OT Lights, Ward Furniture & Oxygen Gas Pipe Line products in the brand name of Medi Castle. We are also a world-class renowned company distributor for O.T, I.C.U & N.I.C.U Equipments.
+              </p>
+              <p>
+                Owing to durability, customized design, easy installation, and other salient features, our entire product range is demanded by various hospitals and health care centers. We have established a strong foothold in the market not just locally, but specifically in South Africa, Bangladesh, Nepal, and Bhutan.
               </p>
               <div className="pt-4 flex flex-col sm:flex-row gap-4">
                 <div className="flex items-center gap-3">
@@ -70,6 +76,71 @@ export default function AboutPage() {
             />
           </div>
 
+        </div>
+      </section>
+
+
+      {/* ACHIEVEMENTS (STATS) */}
+      <section className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto mb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+            <div className="w-12 h-12 bg-blue-50 text-[hsl(var(--medicastle-blue))] rounded-xl flex items-center justify-center mx-auto mb-4"><TrendingUp className="w-6 h-6" /></div>
+            <h3 className="text-3xl font-black text-[hsl(var(--medicastle-blue))]">15+</h3>
+            <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium mt-1">Years Experience</p>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+            <div className="w-12 h-12 bg-red-50 text-[hsl(var(--medicastle-red))] rounded-xl flex items-center justify-center mx-auto mb-4"><Globe className="w-6 h-6" /></div>
+            <h3 className="text-3xl font-black text-[hsl(var(--medicastle-blue))]">5+</h3>
+            <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium mt-1">Countries Served</p>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm text-center">
+            <div className="w-12 h-12 bg-blue-50 text-[hsl(var(--medicastle-blue))] rounded-xl flex items-center justify-center mx-auto mb-4"><Award className="w-6 h-6" /></div>
+            <h3 className="text-3xl font-black text-[hsl(var(--medicastle-blue))]">ISO</h3>
+            <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium mt-1">9001:2015 Certified</p>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="bg-[hsl(var(--medicastle-blue))] p-8 rounded-3xl shadow-lg text-center text-white">
+            <div className="w-12 h-12 bg-white/10 text-[hsl(var(--medicastle-red))] rounded-xl flex items-center justify-center mx-auto mb-4"><HeartHandshake className="w-6 h-6" /></div>
+            <h3 className="text-3xl font-black text-white">24/7</h3>
+            <p className="text-white/80 font-medium mt-1">Client Support</p>
+          </motion.div>
+        </div>
+      </section>
+
+
+      {/* COMPANY LOCATIONS */}
+      <section className="px-4 sm:px-6 lg:px-8 max-w-[1400px] mx-auto mb-24">
+        <div className="text-center mb-12">
+          <h2 className={`${playfair.className} text-3xl md:text-5xl font-black text-[hsl(var(--medicastle-blue))]`}>
+            Our <span className="text-[hsl(var(--medicastle-red))]">Locations.</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-6 hover:border-[hsl(var(--medicastle-red))]/30 transition-colors">
+            <div className="w-14 h-14 bg-red-50 text-[hsl(var(--medicastle-red))] rounded-2xl flex items-center justify-center shrink-0">
+              <Building2 className="w-7 h-7" />
+            </div>
+            <div>
+              <h4 className="text-2xl font-black text-[hsl(var(--medicastle-blue))] mb-2">Head Office (Bally)</h4>
+              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium leading-relaxed mb-4">
+                17/3/E, Roy J.N. Bahadur Road,<br/>
+                Bally Howrah - 711201, West Bengal.
+              </p>
+              <p className="text-[hsl(var(--medicastle-red))] font-bold">📞 +91 89618 57588</p>
+            </div>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex items-start gap-6 hover:border-[hsl(var(--medicastle-blue))]/30 transition-colors">
+            <div className="w-14 h-14 bg-blue-50 text-[hsl(var(--medicastle-blue))] rounded-2xl flex items-center justify-center shrink-0">
+              <MapPin className="w-7 h-7" />
+            </div>
+            <div>
+              <h4 className="text-2xl font-black text-[hsl(var(--medicastle-blue))] mb-2">Branch Office (Uttarpara)</h4>
+              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium leading-relaxed mb-4">
+                51/1, Rajmohan Road,<br/>
+                Uttarpara, Hooghly - 712258, West Bengal.
+              </p>
+              <p className="text-[hsl(var(--medicastle-red))] font-bold">📞 +91 89027 21080</p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
