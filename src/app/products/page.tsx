@@ -48,7 +48,7 @@ export default function ProductsPage() {
             <h3 className="text-xl font-bold text-[hsl(var(--medicastle-blue))] mb-6 pb-4 border-b border-gray-100">
               Categories
             </h3>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 overflow-y-auto max-h-[calc(100vh-14rem)] pr-2 scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-transparent">
               {categories.map((cat) => (
                 <button
                   key={cat}
