@@ -80,6 +80,11 @@ export const products: Product[] = [
   { id: "10", name: "Syringe Pump", model: "MC-40076", category: "Critical Care Equipment", image: "/mc-40076.png" },
   { id: "9", name: "ICU Ventilator", model: "MC-40077 (A)", category: "Critical Care Equipment", image: "/mc-40077a.png" },
   { id: "145", name: "Transport Ventilator", model: "MC-40078", category: "Critical Care Equipment", image: "/mc-40078.png" },
+  { id: "152", name: "RESPIRARE VT 400ST", model: "VT 400ST", category: "Critical Care Equipment", image: "/vt-400st.png" },
+  { id: "153", name: "RESPIRARE VT 60ST", model: "VT 60ST", category: "Critical Care Equipment", image: "/vt-60st.png" },
+  { id: "154", name: "RESPIRARE VT 300", model: "VT 300", category: "Critical Care Equipment", image: "/vt-300.png" },
+  { id: "155", name: "BiPAP VT 90ST", model: "VT 90ST", category: "Critical Care Equipment", image: "/vt-90st.png" },
+  { id: "156", name: "Respirare VT 70D", model: "VT 70D", category: "Critical Care Equipment", image: "/vt-70d.png" },
 
   // O.T. SOLUTION
   { id: "12", name: "Electro Mechanical C-ARM Compatible OT Table", model: "MC-40043 (A)", category: "O.T. Solution", image: "/mc-40043a.png" },
