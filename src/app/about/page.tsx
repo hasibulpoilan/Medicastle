@@ -163,7 +163,7 @@ export default function AboutPage() {
             >
               <Award className="w-12 h-12 text-[hsl(var(--medicastle-blue))]" />
               <h3 className="text-2xl font-black text-[hsl(var(--medicastle-blue))] text-center">BPL Medical Technologies</h3>
-              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-center">Authorized Dealer</p>
+              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-center">Channel Partner</p>
             </motion.div>
 
             <motion.div 
@@ -175,7 +175,7 @@ export default function AboutPage() {
             >
               <Award className="w-12 h-12 text-[hsl(var(--medicastle-red))]" />
               <h3 className="text-2xl font-black text-[hsl(var(--medicastle-blue))] text-center">Deckmount Electronics</h3>
-              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-center">Authorized Dealer</p>
+              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium text-center">Channel Partner</p>
             </motion.div>
           </div>
         </div>

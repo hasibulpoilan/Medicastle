@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Medi Castle | Leading Medical Equipments Supplier",
-  description: "Authorized Dealer of BPL Medical Technologies. Deals in Medical Equipments, Surgical Items, Ortho Aids, Hospital Bed, BIPAP, CPAP, Oxygen Cylinder & Concentrator.",
+  description: "ISO 9001:2015 Certified Medical Equipment Supplier. Deals in Medical Equipments, Surgical Items, Ortho Aids, Hospital Bed, BIPAP, CPAP, Oxygen Cylinder & Concentrator.",
 };
 
 export const viewport = {

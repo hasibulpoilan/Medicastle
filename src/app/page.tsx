@@ -141,7 +141,7 @@ export default function Home() {
         <div className="relative z-10 w-full px-4 md:px-8 max-w-5xl mx-auto flex flex-col items-center space-y-6 md:space-y-8">
           {/* Pill Tag */}
           <div className="inline-flex items-center gap-2 border border-[hsl(var(--medicastle-blue))]/20 bg-[hsl(var(--medicastle-blue))]/5 px-5 md:px-6 py-2.5 md:py-3 rounded-full w-[95%] max-w-sm md:max-w-md justify-center shadow-[0_0_15px_rgba(255,255,255,1)]">
-            <span className="text-[hsl(var(--medicastle-blue))] text-xs md:text-sm font-bold tracking-wider uppercase">Authorized BPL Medical Dealer</span>
+            <span className="text-[hsl(var(--medicastle-blue))] text-xs md:text-sm font-bold tracking-wider uppercase">ISO 9001:2015 Certified Company</span>
           </div>
           
           {/* Subheading */}
@@ -157,7 +157,7 @@ export default function Home() {
           
           {/* Paragraph */}
           <p className="text-[hsl(var(--medicastle-blue))]/90 text-base md:text-xl font-medium leading-relaxed text-center px-4 max-w-3xl drop-shadow-[0_0_10px_rgba(255,255,255,1)] pt-2 md:pt-4">
-            Say goodbye to compromised healthcare at home. Join our premium network of ICU setups and advanced respiratory care directly from authorized experts.
+            Say goodbye to compromised healthcare at home. Join our premium network of ICU setups and advanced respiratory care directly from certified experts.
           </p>
 
           {/* Buttons */}
@@ -342,7 +342,7 @@ export default function Home() {
                  <Package className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-[hsl(var(--medicastle-blue))] mb-3">Equipment Sales</h3>
-              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium leading-relaxed">Purchase high-quality, certified medical equipment directly from authorized dealers.</p>
+              <p className="text-[hsl(var(--medicastle-blue))]/70 font-medium leading-relaxed">Purchase high-quality, certified medical equipment directly from us.</p>
            </div>
            
            {/* Card 2 */}

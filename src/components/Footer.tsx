@@ -16,7 +16,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-col space-y-2 mt-4 text-sm text-gray-700">
               <p><strong>GST No.:</strong> 19AWAPG1095M1ZB</p>
-              <p className="text-[hsl(var(--medicastle-red))] font-semibold">Authorized Dealer: BPL Medical Technologies & Deckmount Electronics</p>
+
             </div>
           </div>
 
